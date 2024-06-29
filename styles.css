@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Horizon';
+    src: url('horizon.ttd');
+}
 /* General Styles */
 body {
   background-color: #2e2e2e;
