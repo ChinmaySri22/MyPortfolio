@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinmay's Portfolio</title>
+  <link rel="icon" type="Image/png" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<!-- NAVBAR -->
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#projects">My Projects</a>
+  <a href="#connect">Connect with me</a>
+  <button class="contact-button" id="contactButton">Contact Me</button>
+</div>
+<!-- HOME -->
+<div class="main-content">
+  <div class="intro">
+    <p>I am a Software Engineer</p>
+    <h1>CHINMAY SRIVASTAVA</h1>
+    <p>I am a Tech Enthusiast pursuing Bachelor's of Technology in Computer Science.</p>
+  </div>
+  <div class="profile">
+    <img src="profile.png" alt="Chinmay Srivastava" height="300px" width="300px">
+  </div>
+</div>
+<!-- ABOUT -->
+<div class="about" id="about">
+  <img id="whoiam" src="about (2).png">
+  <p>I am a BTech CSE student at BML Munjal University specialized in Machine
+    Learning, Data Science, Web Development, and App Development. With
+    hands-on experience in these fields, I strive to create smart and efficient
+    solutions. I stay active in clubs, sports and theatre in my college as well.</p>
+  <button class="connect-button"><a href="#connect" style="color: black; font-weight: bold;">Connect With Me</a></button>
+</div>
+</div>
+<div class="myskills">
+  <img id="skills" src="skills (2).png">
+</div>
+
+<!-- PROJECTS -->
+<div class="myprojs" id="projects">
+  <h1>PROJECTS</h1>
+  <div class="projects">
+    <div class="project">
+      <img src="prj1.png" alt="OurPodcast Website">
+      <div><a class="gitbtn" href='https://github.com/ChinmaySri22/OurPodcast'> OurPodcast Website </a></div>
+    </div>
+    <div class="project">
+      <img src="prj2.png" alt="Image Classifier">
+      <div><a class="gitbtn" href='https://github.com/ChinmaySri22/ImageClassificationWithSVM'> Hand Gesture Recognition
+        </a></div>
+    </div>
+    <div class="project">
+      <img src="prj3.png" alt="SpamGuard">
+      <div><a class="gitbtn" href='https://github.com/ChinmaySri22'> SpamGuard </a></div>
+    </div>
+    <div class="project">
+      <img src="prj4.png" alt="ESamachar Application">
+      <div><a class="gitbtn" href='https://github.com/ChinmaySri22'> ESamachar Application </a></div>
+    </div>
+  </div>
+  <button class="GitLink" onclick="window.location.href = 'https://github.com/ChinmaySri22';">Check Out My All
+    Repositories</button>
+</div>
+
+<!-- Connect with me -->
+<footer class="footer" id="connect">
+  <div class="footercontent">
+      <p class="footertext">CONNECTION IS A MUST...</p>
+      <div class="logos">
+        <a href="https://www.linkedin.com/in/hello-chinmay-srivastava/"><img src="logo2.png" alt="Linkedin" class="footer-logo"></a>
+          <a href="https://t.me/Chinmayji"><img src="logo1.png" alt="Telegram" class="footer-logo"></a>
+          <a href="https://www.https://www.instagram.com/_chinmaayy._/"><img src="logo3.png" alt="Instagram" class="footer-logo"></a>
+          <a href="https://www.facebook.com/chinmay.srivastava.543?mibextid=ZbWKwL"><img src="logo4.png" alt="Facebook" class="footer-logo"></a>
+      </div>
+      <p class="footer-copyright">© 2024 Chinmay Srivastava. All rights reserved</p>
+  </div>
+</footer>
+
+<!-- Contact me -->
+<div id="contactForm" class="form">
+  <div class="formcontent">
+    <span class="close">&times;</span>
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  document.getElementById('contactButton').addEventListener('click', function () {
+    document.getElementById('contactForm').style.display = 'block';
+  });
+
+  document.querySelector('.close').addEventListener('click', function () {
+    document.getElementById('contactForm').style.display = 'none';
+  });
+
+  window.onclick = function (event) {
+    if (event.target == document.getElementById('contactForm')) {
+      document.getElementById('contactForm').style.display = 'none';
+    }
+  }
+  </script>
+</body>
+
+</html>
