@@ -17,7 +17,7 @@ img:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .intro h1 {
-  font-family: Horizon, Arial, Helvetica, sans-serif;
+  font-family: Horizon, Helvetica, Arial, sans-serif;
   font-size: 70px;
   margin: 20px 0;
   display: inline-block; /* Ensures the gradient applies only to the text width */
@@ -272,7 +272,7 @@ img:hover {
 }
 
 .footertext {
-  font-family: Horizon,Arial, Helvetica, sans-serif;
+  font-family: Horizon, Helvetica, Arial,  sans-serif;
   font-size: 30px;
   margin-bottom: 20px;
   font-weight: bold;
