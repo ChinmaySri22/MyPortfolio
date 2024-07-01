@@ -1,6 +1,8 @@
 @font-face {
-    font-family: 'Horizon';
-    src: url('horizon.ttf');
+  font-family: 'Horizon';
+  src: url('horizon.woff2') format('woff2'),
+       url('horizon.woff') format('woff'),
+       url('horizon.ttf') format('truetype');
 }
 /* General Styles */
 body {
